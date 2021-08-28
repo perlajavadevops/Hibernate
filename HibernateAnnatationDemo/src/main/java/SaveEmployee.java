@@ -33,6 +33,8 @@ public class SaveEmployee {
 		session.save(e1);// persisting the object
 		t.commit();// transaction is committed
 		session.close();
+		sessionFactoryObj.close();
+
 		System.out.println("successfully saved");
 	}
 
